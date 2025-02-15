@@ -80,6 +80,7 @@ hg update
 
 ## **3. Hosting index.html with Readme.md on GitHub Pages**
 1. **Create an `index.html` file** in your repository:
+```
 `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -117,7 +118,7 @@ hg update
     </script>
 </body>
 </html>
-
+```
 
 2. **Push Files to GitHub:**
 ```bash
