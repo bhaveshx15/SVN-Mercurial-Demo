@@ -7,6 +7,8 @@
 mkdir -p ~/Desktop/DevOps/myrepo
 svnadmin create ~/Desktop/DevOps/myrepo
 ```
+![Screenshot from 2025-02-15 21-41-05](https://github.com/user-attachments/assets/fd4eeeab-ebff-4df9-ab5c-6a50c91f157a)
+
 
 ### **Step 2: Checkout the Repository**
 ```bash
@@ -31,15 +33,22 @@ svn commit -m "Added file.txt"
 svn log
 svn update
 ```
+![Screenshot from 2025-02-15 21-52-59](https://github.com/user-attachments/assets/a2ce8738-228d-419c-8fac-730c9671b599)
+
 
 ## **2. Mercurial (Hg) Experiment**
 
 ### **Step 1: Initialize a Mercurial Repository**
+
+![Screenshot from 2025-02-15 21-57-22](https://github.com/user-attachments/assets/2b6e127e-9de8-4901-8a22-10f8d01fadad)
+
 ```bash
 mkdir -p ~/Desktop/DevOps/brepo
 cd ~/Desktop/DevOps/brepo
 hg init
 ```
+![Screenshot from 2025-02-15 22-29-53](https://github.com/user-attachments/assets/3a675e63-1e6f-4dd7-a16a-a7301bb046d6)
+
 
 ### **Step 2: Configure Username**
 ```bash
@@ -57,12 +66,16 @@ echo "Hello Mercurial" > file.txt
 hg add file.txt
 hg commit -m "Added file.txt"
 ```
+![Screenshot from 2025-02-15 22-29-53](https://github.com/user-attachments/assets/a1dcb3a4-3f8b-4267-970b-97a8be3e4a89)
+
 
 ### **Step 4: Clone the Repository**
 ```bash
 cd ~/Desktop/DevOps
 hg clone brepo myclone
 ```
+![Screenshot from 2025-02-15 22-30-17](https://github.com/user-attachments/assets/31bb2017-af4b-43e9-b9e3-414d2ac3688e)
+
 
 ### **Step 5: Make Changes and Pull Updates**
 ```bash
@@ -77,6 +90,8 @@ cd ~/Desktop/DevOps/myclone
 hg pull
 hg update
 ```
+![Screenshot from 2025-02-15 22-30-49](https://github.com/user-attachments/assets/2d12a5e1-e295-448d-a421-0e613dbaa61d)
+
 
 ## **3. Hosting index.html with Readme.md on GitHub Pages**
 1. **Create an `index.html` file** in your repository:
