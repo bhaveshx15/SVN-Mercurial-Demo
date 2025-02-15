@@ -78,22 +78,46 @@ hg pull
 hg update
 ```
 
-## **3. Hosting index.html with experiment.md on GitHub Pages**
+## **3. Hosting index.html with Readme.md on GitHub Pages**
 1. **Create an `index.html` file** in your repository:
-```html
-<!DOCTYPE html>
+`<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Version Control Experiment</title>
+    <title>SVN & Mercurial Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+        #content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <h1>Version Control Experiment</h1>
-    <p><a href="experiment.md">View experiment.md</a></p>
+    <h2>SVN & Mercurial Practical Report</h2>
+    <div id="content">Loading...</div>
+
+    <script>
+        fetch('README.md')
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById('content').innerHTML = marked.parse(text);
+            })
+            .catch(error => {
+                document.getElementById('content').innerHTML = "<p>Error loading README.md</p>";
+            });
+    </script>
 </body>
 </html>
-```
+
 
 2. **Push Files to GitHub:**
 ```bash
