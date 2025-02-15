@@ -7,7 +7,7 @@
 mkdir -p ~/Desktop/DevOps/myrepo
 svnadmin create ~/Desktop/DevOps/myrepo
 ```
-![Screenshot](https://github.com/bhaveshx15/SVN-Mercurial-Demo/blob/main/images/Screenshot%20from%202025-02-15%2021-41-05.png)
+![Screenshot from 2025-02-15 21-41-05](https://github.com/user-attachments/assets/0aa35f92-e00d-4705-9e3f-0c38c98ed448)
 
 
 ### **Step 2: Checkout the Repository**
